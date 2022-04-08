@@ -3,34 +3,27 @@
         position: relative;
         overflow: hidden;
         &-wrapper{
-            width: 100%;
             display: flex;
-            justify-content: space-between;
-            @include media(992){
-                width: max-content;
-                justify-content: flex-start;
-            }
+            width: max-content;
+            justify-content: flex-start;
         }
     }
     &__item{
-        width: calc(33.3333% - 20px) !important;
-        &:not(:last-of-type){
-            @include media(992){
-                margin-right: 30px;
-            }
-        }
-        @include media(992){
-            max-width: 362px;
-            width: max-content;
-        }
+        max-width: 362px !important;
+        width: 100% !important;
         @include media(576){
-            max-width: 242px;
+            max-width: 242px !important;
         }
         &-img{
             width: 100%;
             margin-bottom: 15px;
             img{
                 width: 100%;
+                height: 241px;
+                object-fit: cover;
+                @include media(576){
+                    height: 161px;
+                }
             }
         }
         &-p{
@@ -38,6 +31,12 @@
             font-size: 16px;
             line-height: 19px;
             color: #000000;
+            @include media(576){
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+            }
         }
     }
     &__btn{
