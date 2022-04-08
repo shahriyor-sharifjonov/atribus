@@ -1,0 +1,38 @@
+.docs{
+    &__slider{
+        overflow: hidden;
+        position: relative;
+        &-wrapper{
+            display: flex;
+            width: max-content;
+        }
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        @include media(992){
+            max-width: 242px;
+            img{
+                width: 100%;
+            }
+        }
+        &:not(:last-of-type){
+            margin-right: 92px;
+            @include media(992){
+                margin-right: 16px;
+            }
+        }
+        &-p{
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #000000;
+            @include media(576){
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
+}

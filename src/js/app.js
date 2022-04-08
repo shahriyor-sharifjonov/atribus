@@ -32,8 +32,8 @@ $(document).ready(function() {
 
 var works = new Swiper(".works__slider", {
   slidesPerView: "auto",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+});
+
+var docs = new Swiper(".docs__slider", {
+  slidesPerView: "auto",
 });
