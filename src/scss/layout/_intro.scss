@@ -1,0 +1,85 @@
+.intro{
+    margin-top: -100px;
+    // padding-top: 100px;
+    height: 100vh;
+    min-height: 750px;
+    background: url('../img/intro-bg.png') center / cover no-repeat;
+    @include media(576){
+        margin-top: -143px;
+    }
+    &__body{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    &__title{
+        font-family: 'Styrene A Web';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 60px;
+        color: #FFFFFF;
+        margin-bottom: 35px;
+        @include media(768){
+            font-weight: 900;
+            font-size: 25px;
+            line-height: 28px;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+    }
+    &__row{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        column-gap: 30px;
+        margin-bottom: 35px;
+        @include media(768){
+            flex-direction: column;
+            column-gap: 0;
+            row-gap: 15px;
+            margin-bottom: 20px;
+        }
+    }
+    &__col{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        column-gap: 18px;
+        @include media(768){
+            width: 100%;
+        }
+        span{
+            max-width: 235px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25px;
+            color: #FFFFFF;
+            @include media(768){
+                max-width: 100%;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__form{
+        &-title{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px;
+            color: #FFFFFF;
+            margin-bottom: 26px;
+            @include media(768){
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

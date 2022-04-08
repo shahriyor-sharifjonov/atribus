@@ -1,0 +1,90 @@
+.footer{
+    background: #333333;
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 80px 15px 100px 15px;
+        column-gap: 30px;
+        @include media(992){
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        @include media(576){
+            padding: 50px 15px 60px 15px;
+        }
+    }
+    &__logo{
+        font-family: 'Styrene A Web';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 33px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        display: block;
+        color: #FFFFFF;
+    }
+    &__p{
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 0.7);        
+        span{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #F2994A;            
+        }
+    }
+    &__title{
+        font-family: 'Styrene A Web';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FFFFFF;      
+        margin-bottom: 50px;  
+        @include media(992){
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 33px;
+            margin-bottom: 20px;
+        }
+        @include media(576){
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        max-width: 206px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__loc{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;        
+    }
+    &__item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 10px;
+        span{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+    }
+    &__info{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+}
