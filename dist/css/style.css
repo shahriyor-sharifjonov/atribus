@@ -511,8 +511,29 @@ a {
   color: #FFFFFF;
 }
 
+.form-p.dark {
+  color: #000;
+  font-weight: 400;
+}
+
 .form-p a {
   color: #F2994A;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000000;
+  margin-bottom: 60px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section.gray {
+  background: #F4F4F4;
 }
 
 @media (min-width: 576px) {
@@ -645,6 +666,12 @@ a {
   .form-p {
     display: block;
   }
+
+  .title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -692,6 +719,23 @@ a {
   .footer__title {
     font-size: 20px;
     line-height: 26px;
+    margin-bottom: 25px;
+  }
+
+  .footer__item {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .footer__item span {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .footer__info {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .intro {

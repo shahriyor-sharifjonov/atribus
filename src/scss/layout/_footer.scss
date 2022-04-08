@@ -54,6 +54,7 @@
         @include media(576){
             font-size: 20px;
             line-height: 26px;
+            margin-bottom: 25px;
         }
     }
     &__row{
@@ -74,11 +75,19 @@
         justify-content: flex-start;
         align-items: center;
         column-gap: 10px;
+        @include media(576){
+            font-size: 15px;
+            line-height: 18px;
+        }
         span{
             font-weight: 300;
             font-size: 16px;
             line-height: 19px;
             color: #FFFFFF;
+            @include media(576){
+                font-size: 16px;
+                line-height: 18px;
+            }
         }
     }
     &__info{
@@ -86,5 +95,10 @@
         font-size: 16px;
         line-height: 19px;
         color: #FFFFFF;
+        @include media(576){
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
 }
