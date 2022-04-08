@@ -1,0 +1,68 @@
+mixin content()
+    .accordion__content 
+        ul.handbook__list 
+            li.handbook__li Градостроительный кодекс РФ от 29.12.2004 № 190-ФЗ                    
+            li.handbook__li Федеральный закон от 03.08.2018 г. № 342-ФЗ «О внесении изменений в Градостроительный кодекс Российской Федерации и отдельные законодательные акты Российской Федерации»
+            li.handbook__li Постановление Правительства РФ от 03.03.2018 г. № 222 «Об утверждении Правил установления санитарно-защитных зон и использования земельных участков, расположенных в границах санитарно-защитных зон»
+            li.handbook__li СанПиН 2.2.1/2.1.1.1200-03 «Санитарно-защитные зоны и санитарная классификация предприятий, сооружений и иных объектов»
+            li.handbook__li Федеральный закон № 96-ФЗ от 04.05.1999 «Об охране атмосферного воздуха»
+
+
+mixin handbook()
+    .handbook.section 
+        .handbook__body.container 
+            h2.title.handbook__title Справочник СЗЗ
+            .accordion
+                button(type='button').accordion__button  
+                    <svg class="hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7071 9.70711C20.0976 9.31658 20.0976 8.68342 19.7071 8.29289C19.3166 7.90237 18.6834 7.90237 18.2929 8.29289L19.7071 9.70711ZM12 16L11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071L12 16ZM5.70711 8.29289C5.31658 7.90237 4.68342 7.90237 4.29289 8.29289C3.90237 8.68342 3.90237 9.31658 4.29289 9.70711L5.70711 8.29289ZM18.2929 8.29289L11.2929 15.2929L12.7071 16.7071L19.7071 9.70711L18.2929 8.29289ZM12.7071 15.2929L5.70711 8.29289L4.29289 9.70711L11.2929 16.7071L12.7071 15.2929Z" fill="#F2994A"/></svg>
+                    <svg class="show" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 6L5.99997 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    span Зачем нужен проект СЗЗ?
+                +content
+            .accordion
+                button(type='button').accordion__button.active  
+                    <svg class="hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7071 9.70711C20.0976 9.31658 20.0976 8.68342 19.7071 8.29289C19.3166 7.90237 18.6834 7.90237 18.2929 8.29289L19.7071 9.70711ZM12 16L11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071L12 16ZM5.70711 8.29289C5.31658 7.90237 4.68342 7.90237 4.29289 8.29289C3.90237 8.68342 3.90237 9.31658 4.29289 9.70711L5.70711 8.29289ZM18.2929 8.29289L11.2929 15.2929L12.7071 16.7071L19.7071 9.70711L18.2929 8.29289ZM12.7071 15.2929L5.70711 8.29289L4.29289 9.70711L11.2929 16.7071L12.7071 15.2929Z" fill="#F2994A"/></svg>
+                    <svg class="show" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 6L5.99997 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    span Чем регламентируется разработка проекта СЗЗ?
+                .accordion__content(style="display:block") 
+                    ul.handbook__list 
+                        li.handbook__li Градостроительный кодекс РФ от 29.12.2004 № 190-ФЗ                    
+                        li.handbook__li Федеральный закон от 03.08.2018 г. № 342-ФЗ «О внесении изменений в Градостроительный кодекс Российской Федерации и отдельные законодательные акты Российской Федерации»
+                        li.handbook__li Постановление Правительства РФ от 03.03.2018 г. № 222 «Об утверждении Правил установления санитарно-защитных зон и использования земельных участков, расположенных в границах санитарно-защитных зон»
+                        li.handbook__li СанПиН 2.2.1/2.1.1.1200-03 «Санитарно-защитные зоны и санитарная классификация предприятий, сооружений и иных объектов»
+                        li.handbook__li Федеральный закон № 96-ФЗ от 04.05.1999 «Об охране атмосферного воздуха»
+            .accordion
+                button(type='button').accordion__button  
+                    <svg class="hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7071 9.70711C20.0976 9.31658 20.0976 8.68342 19.7071 8.29289C19.3166 7.90237 18.6834 7.90237 18.2929 8.29289L19.7071 9.70711ZM12 16L11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071L12 16ZM5.70711 8.29289C5.31658 7.90237 4.68342 7.90237 4.29289 8.29289C3.90237 8.68342 3.90237 9.31658 4.29289 9.70711L5.70711 8.29289ZM18.2929 8.29289L11.2929 15.2929L12.7071 16.7071L19.7071 9.70711L18.2929 8.29289ZM12.7071 15.2929L5.70711 8.29289L4.29289 9.70711L11.2929 16.7071L12.7071 15.2929Z" fill="#F2994A"/></svg>
+                    <svg class="show" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 6L5.99997 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    span Что такое ориентировочная санзона?
+                +content
+            .accordion
+                button(type='button').accordion__button  
+                    <svg class="hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7071 9.70711C20.0976 9.31658 20.0976 8.68342 19.7071 8.29289C19.3166 7.90237 18.6834 7.90237 18.2929 8.29289L19.7071 9.70711ZM12 16L11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071L12 16ZM5.70711 8.29289C5.31658 7.90237 4.68342 7.90237 4.29289 8.29289C3.90237 8.68342 3.90237 9.31658 4.29289 9.70711L5.70711 8.29289ZM18.2929 8.29289L11.2929 15.2929L12.7071 16.7071L19.7071 9.70711L18.2929 8.29289ZM12.7071 15.2929L5.70711 8.29289L4.29289 9.70711L11.2929 16.7071L12.7071 15.2929Z" fill="#F2994A"/></svg>
+                    <svg class="show" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 6L5.99997 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    span Что такое дополнительная оценка рисков?
+                +content
+            .accordion
+                button(type='button').accordion__button  
+                    <svg class="hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7071 9.70711C20.0976 9.31658 20.0976 8.68342 19.7071 8.29289C19.3166 7.90237 18.6834 7.90237 18.2929 8.29289L19.7071 9.70711ZM12 16L11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071L12 16ZM5.70711 8.29289C5.31658 7.90237 4.68342 7.90237 4.29289 8.29289C3.90237 8.68342 3.90237 9.31658 4.29289 9.70711L5.70711 8.29289ZM18.2929 8.29289L11.2929 15.2929L12.7071 16.7071L19.7071 9.70711L18.2929 8.29289ZM12.7071 15.2929L5.70711 8.29289L4.29289 9.70711L11.2929 16.7071L12.7071 15.2929Z" fill="#F2994A"/></svg>
+                    <svg class="show" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 6L5.99997 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    span Что входит в проект СЗЗ?
+                +content
+            .accordion
+                button(type='button').accordion__button  
+                    <svg class="hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7071 9.70711C20.0976 9.31658 20.0976 8.68342 19.7071 8.29289C19.3166 7.90237 18.6834 7.90237 18.2929 8.29289L19.7071 9.70711ZM12 16L11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071L12 16ZM5.70711 8.29289C5.31658 7.90237 4.68342 7.90237 4.29289 8.29289C3.90237 8.68342 3.90237 9.31658 4.29289 9.70711L5.70711 8.29289ZM18.2929 8.29289L11.2929 15.2929L12.7071 16.7071L19.7071 9.70711L18.2929 8.29289ZM12.7071 15.2929L5.70711 8.29289L4.29289 9.70711L11.2929 16.7071L12.7071 15.2929Z" fill="#F2994A"/></svg>
+                    <svg class="show" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 6L5.99997 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    span Сколько длится согласование проекта СЗЗ?
+                +content
+            .accordion
+                button(type='button').accordion__button  
+                    <svg class="hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7071 9.70711C20.0976 9.31658 20.0976 8.68342 19.7071 8.29289C19.3166 7.90237 18.6834 7.90237 18.2929 8.29289L19.7071 9.70711ZM12 16L11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071L12 16ZM5.70711 8.29289C5.31658 7.90237 4.68342 7.90237 4.29289 8.29289C3.90237 8.68342 3.90237 9.31658 4.29289 9.70711L5.70711 8.29289ZM18.2929 8.29289L11.2929 15.2929L12.7071 16.7071L19.7071 9.70711L18.2929 8.29289ZM12.7071 15.2929L5.70711 8.29289L4.29289 9.70711L11.2929 16.7071L12.7071 15.2929Z" fill="#F2994A"/></svg>
+                    <svg class="show" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 6L5.99997 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    span Как часто нужно разрабатывать проект СЗЗ?
+                +content
+            .accordion
+                button(type='button').accordion__button  
+                    <svg class="hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7071 9.70711C20.0976 9.31658 20.0976 8.68342 19.7071 8.29289C19.3166 7.90237 18.6834 7.90237 18.2929 8.29289L19.7071 9.70711ZM12 16L11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071L12 16ZM5.70711 8.29289C5.31658 7.90237 4.68342 7.90237 4.29289 8.29289C3.90237 8.68342 3.90237 9.31658 4.29289 9.70711L5.70711 8.29289ZM18.2929 8.29289L11.2929 15.2929L12.7071 16.7071L19.7071 9.70711L18.2929 8.29289ZM12.7071 15.2929L5.70711 8.29289L4.29289 9.70711L11.2929 16.7071L12.7071 15.2929Z" fill="#F2994A"/></svg>
+                    <svg class="show" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 18L6 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 6L5.99997 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    span Какая ответственность предусмотрена за отсутствие проекта СЗЗ?
+                +content
